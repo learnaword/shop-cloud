@@ -9,6 +9,14 @@
     <file url="file://$PROJECT_DIR$/shop-framework/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-pay/shop-service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service-pay/shop-service-order/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-service-pay/shop-service-pay-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-service-pay/shop-service-pay-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java" charset="UTF-8" />

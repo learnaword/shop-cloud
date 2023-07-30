@@ -21,8 +21,12 @@
         <module name="shop-service-pay-biz" />
         <module name="shop-common" />
         <module name="shop-service-pay-api" />
+        <module name="shop-service-order-api" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop-service-order" target="20" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

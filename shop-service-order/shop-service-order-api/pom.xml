@@ -3,23 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.shop</groupId>
-        <artifactId>shop-service-pay</artifactId>
+        <artifactId>shop-service-order</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>shop-service-pay-api</artifactId>
+    <artifactId>shop-service-order-api</artifactId>
     <packaging>jar</packaging>
 
-    <name>shop-service-pay-api</name>
+    <name>shop-service-order-api</name>
 
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.shop</groupId>
-            <artifactId>shop-common</artifactId>
-        </dependency>
+
     </dependencies>
 </project>
