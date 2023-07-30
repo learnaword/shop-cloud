@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.shop</groupId>
+        <artifactId>shop-service-pay</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>shop-service-pay-biz</artifactId>
+    <packaging>jar</packaging>
+
+    <name>shop-service-pay-biz</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.shop</groupId>
+            <artifactId>shop-service-pay-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+    </dependencies>
+</project>
