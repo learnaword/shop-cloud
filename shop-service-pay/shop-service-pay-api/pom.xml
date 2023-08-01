@@ -17,6 +17,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.shop</groupId>
             <artifactId>shop-common</artifactId>

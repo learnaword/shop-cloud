@@ -13,6 +13,7 @@
     <name>shop-framework</name>
     <modules>
         <module>shop-common</module>
+        <module>shop-spring-boot-starter-redis</module>
     </modules>
 
 </project>

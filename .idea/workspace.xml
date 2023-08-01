@@ -5,23 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/utils/ValidationUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/test/java/com/shop/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/test/java/com/shop/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/controller/app/PayAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/controller/app/PayAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/convert/app/AppConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/convert/app/AppConvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/core/client/alipay/AlipayPayClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/core/client/alipay/AlipayPayClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/test/java/com/example/easypay/EasyPayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/test/java/com/example/easypay/EasyPayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/enums/GlobalErrorCodeConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/exception/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/exception/ServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/pojo/CollectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/pojo/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/pojo/PageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/pojo/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/pojo/SortingField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/utils/ValidationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/config/YudaoCacheAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/config/YudaoRedisAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/core/RedisKeyDefine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/core/RedisKeyRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/target/classes/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/PreOrderDetailVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/PreOrderReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/PreOrderResqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/dataobject/ProductDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/dataobject/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/enums/OrderStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/bo/OrderInfoBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/bo/OrderInfoDetailBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-dependencies/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-gateway/src/main/java/com/shop/service/pay/shop/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-gateway/src/main/java/com/shop/pay/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-gateway/src/test/java/com/shop/service/pay/shop/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-gateway/src/test/java/com/shop/pay/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-api/src/main/java/com/shop/service/pay/shop/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-api/src/main/java/com/shop/pay/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-api/src/test/java/com/shop/service/pay/shop/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-api/src/test/java/com/shop/pay/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/service/pay/shop/PayServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/PayServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/service/pay/shop/dal/order.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/dal/order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/test/java/com/shop/service/pay/shop/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/test/java/com/shop/pay/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +68,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,6 +97,9 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2TFmjucBHZvcAkWZ6e29OC1iIFX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -75,11 +116,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.general",
-    "spring.configuration.checksum": "62b1c197e59f1397fcece8aefb4f7216",
+    "spring.configuration.checksum": "6f0c594cd684a4cf0328025cb227a058",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,7 +129,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop-framework" />
+      <recent name="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common" />
+      <recent name="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shop.common.utils" />
+      <recent name="com.shop.order.enums" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,7 +157,11 @@
       <workItem from="1690695397755" duration="923000" />
       <workItem from="1690696469785" duration="2102000" />
       <workItem from="1690698898605" duration="8895000" />
-      <workItem from="1690714572601" duration="434000" />
+      <workItem from="1690714572601" duration="1179000" />
+      <workItem from="1690800934429" duration="492000" />
+      <workItem from="1690801541826" duration="3819000" />
+      <workItem from="1690860216103" duration="16311000" />
+      <workItem from="1690894389804" duration="1731000" />
     </task>
     <servers />
   </component>
