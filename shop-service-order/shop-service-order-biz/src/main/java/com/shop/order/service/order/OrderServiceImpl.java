@@ -42,7 +42,6 @@ public class OrderServiceImpl implements OrderService {
 
         //计算商品的价格
         BigDecimal totalPrice;
-        User user = userService.getUserInfo();
         OrderInfoBO orderInfoBO = validatePreOrderRequest(preOrderReqVO);
         totalPrice = orderInfoBO.getOrderDetailList().stream().map(e -> e.getPrice().multiply(new BigDecimal(e.getPayNum()))).reduce(BigDecimal.ZERO, BigDecimal::add);
         orderInfoBO.setProTotalFee(totalPrice);
@@ -55,13 +54,15 @@ public class OrderServiceImpl implements OrderService {
         orderInfoBO.setPayFee(orderInfoBO.getProTotalFee());
 
         // 缓存订单
-        String key = user.getUid() +DateUtils.getNowTime()+ IdUtil.fastSimpleUUID();
+        String key = DateUtils.getNowTime()+ IdUtil.fastSimpleUUID();
 
         redisTemplate.opsForValue().set("user_order:" + key, JsonUtils.toJsonString(orderInfoBO), 60, TimeUnit.MINUTES);
 
         PreOrderResqVO preOrderResqVO = new PreOrderResqVO();
         preOrderResqVO.setPreOrderNo(key);
 
+        System.out.println(redisTemplate.opsForValue().get("user_order:" + key));
+        System.out.println(1111);
         return preOrderResqVO;
     }
 
@@ -86,21 +87,25 @@ public class OrderServiceImpl implements OrderService {
             if (ObjectUtil.isNull(product)) {
                 System.out.println("商品信息不存在，请刷新后重新选择");
             }
+
             if (product.getIsDel()) {
                 System.out.println("商品已删除，请刷新后重新选择");
             }
+
             if (!product.getIsShow()) {
                 System.out.println("商品已下架，请刷新后重新选择");
             }
+
             if (product.getStock() < detail.getProductNum()) {
                 System.out.println("商品库存不足，请刷新后重新选择");
             }
+
             OrderInfoDetailBO detailBO = new OrderInfoDetailBO();
             detailBO.setProductId(product.getId());
             detailBO.setProductName(product.getName());
             detailBO.setPayNum(detail.getProductNum());
             detailBO.setProductType(0);
-
+            detailBO.setPrice(product.getPrice());
             detailVoList.add(detailBO);
 
         }

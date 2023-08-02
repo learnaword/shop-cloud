@@ -21,7 +21,10 @@
         <redisson.version>3.21.1</redisson.version>
         <netty-all.version>4.1.92.Final</netty-all.version>
         <slf4j-api.version>2.0.6</slf4j-api.version>
+        <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <jackson-databind.version>2.15.0</jackson-databind.version>
+        <druid.version>1.2.18</druid.version>
+        <mybatis-plus-join-boot-starter.version>1.4.3.2</mybatis-plus-join-boot-starter.version>
     </properties>
 
     <dependencyManagement>
@@ -41,10 +44,29 @@
                 <version>${slf4j-api.version}</version>
             </dependency>
 
+            <!--引入MybtaisPlus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.yulichang</groupId>
+                <artifactId>mybatis-plus-join-boot-starter</artifactId>
+                <version>${mybatis-plus-join-boot-starter.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.shop</groupId>
                 <artifactId>shop-common</artifactId>
                 <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
             </dependency>
 
             <dependency>

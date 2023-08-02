@@ -1,6 +1,22 @@
+server:
+  port: 8081
+
 spring:
   data:
     redis:
       port: 6379
       database: 0
       host: 127.0.0.1
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shop-cloud?serverTimezone=GMT
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+  mybatis-plus:
+    configuration: #sql日志
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      mapper-locations: classpath:classpath:com/shop/order/dal/mapper/*.xml

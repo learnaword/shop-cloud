@@ -5,20 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/mapper/core/mapper/BaseMapperX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/mapper/core/utils/MyBatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接口文档/order/preOrder.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-dependencies/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/utils/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/utils/ValidationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/utils/ValidationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/src/test/java/com/shop/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/test/java/com/shop/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/PreOrderDetailVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/PreOrderDetailVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/dataobject/ProductDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/dataobject/ProductDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/test/java/com/shop/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/VO/PreOrderDetailVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/VO/PreOrderDetailVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/dal/dataobject/ProductDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/dal/dataobject/ProductDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/order/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/order/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/product/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/product/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/test/java/com/shop/pay/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,8 +48,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,13 +91,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "/Users/majunliang/Downloads/project/shop-cloud/shop-service-order/shop-service-order-biz/src/main/resources",
+    "last_opened_file_path": "/Users/majunliang/Downloads/project/shop-cloud",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -91,13 +113,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/mapper" />
       <recent name="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources" />
       <recent name="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main" />
       <recent name="$PROJECT_DIR$/shop-framework" />
       <recent name="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common" />
-      <recent name="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shop.order.config" />
+      <recent name="com.shop.order.dal.mapper.core" />
       <recent name="com.shop.common.utils" />
       <recent name="com.shop.order.enums" />
     </key>
@@ -119,6 +143,7 @@
     <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="shop-service-order-biz" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.shop.OrderApplication" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.shop.*" />
@@ -129,6 +154,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.OrderApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.OrderApplication" />
@@ -161,7 +190,10 @@
       <workItem from="1690894389804" duration="3279000" />
       <workItem from="1690909405335" duration="4091000" />
       <workItem from="1690946791967" duration="3392000" />
-      <workItem from="1690950796495" duration="3572000" />
+      <workItem from="1690950796495" duration="4555000" />
+      <workItem from="1690962694008" duration="3777000" />
+      <workItem from="1690970090039" duration="3852000" />
+      <workItem from="1690974767331" duration="2157000" />
     </task>
     <servers />
   </component>
@@ -178,5 +210,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderServiceImpl.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
