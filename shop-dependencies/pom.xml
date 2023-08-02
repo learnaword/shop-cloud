@@ -15,17 +15,32 @@
         <lombok.version>1.18.28</lombok.version>
         <junit.version>3.8.1</junit.version>
         <mysql.version>8.0.33</mysql.version>
-        <mybatis.version>3.0.2</mybatis.version>
-        <spring-boot.version>3.0.9</spring-boot.version>
+        <spring-boot.version>3.0.6</spring-boot.version>
         <hutool.version>5.8.18</hutool.version>
-        <jackson.veriosn>2.12.5</jackson.veriosn>
-        <redisson.version>3.18.0</redisson.version>
-        <netty-all.version>4.1.90.Final</netty-all.version>
-        <jackson-databind.version>2.15.2</jackson-databind.version>
+        <jackson-datatype.veriosn>2.15.0</jackson-datatype.veriosn>
+        <redisson.version>3.21.1</redisson.version>
+        <netty-all.version>4.1.92.Final</netty-all.version>
+        <slf4j-api.version>2.0.6</slf4j-api.version>
+        <jackson-databind.version>2.15.0</jackson-databind.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- 统一依赖管理 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.shop</groupId>
                 <artifactId>shop-common</artifactId>
@@ -59,27 +74,15 @@
             </dependency>
 
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson.veriosn}</version>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson-datatype.veriosn}</version>
             </dependency>
 
             <dependency>
@@ -89,21 +92,9 @@
             </dependency>
 
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-validation</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-cache</artifactId> <!-- 实现对 Caches 的自动化配置 -->
-                <version>${spring-boot.version}</version>
             </dependency>
 
             <dependency>
@@ -112,6 +103,11 @@
                 <version>${netty-all.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
