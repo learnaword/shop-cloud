@@ -14,6 +14,7 @@
     <modules>
         <module>shop-common</module>
         <module>shop-spring-boot-starter-redis</module>
+        <module>shop-spring-boot-starter-mybatis</module>
     </modules>
 
 </project>

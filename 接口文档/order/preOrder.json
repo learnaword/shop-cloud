@@ -8,7 +8,7 @@
     "list": [
       {
         "query_path": {
-          "path": "/api/front/order//preOrder",
+          "path": "/order//preOrder",
           "params": []
         },
         "preOrderType": 1,
@@ -22,6 +22,14 @@
     ]
   },
   {
+    "des": "/order//preOrder的测试案例",
+    "preOrderType": "buyNow",
+    "orderDetails": [
+      {
+        "productId": "1",
+        "productNum": "3"
+      }
+    ]
+  }
 
-   }
 ]

@@ -1,4 +1,4 @@
-package com.shop.order.dal.mapper.core.mapper;
+package com.shop.fremework.mybatis.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -6,11 +6,10 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.support.SFunction;
 import com.baomidou.mybatisplus.extension.toolkit.Db;
-
 import com.github.yulichang.base.MPJBaseMapper;
 import com.shop.common.pojo.PageParam;
 import com.shop.common.pojo.PageResult;
-import com.shop.order.dal.mapper.core.utils.MyBatisUtils;
+import com.shop.fremework.mybatis.utils.MyBatisUtils;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Collection;

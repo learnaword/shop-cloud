@@ -52,6 +52,12 @@
             </dependency>
 
             <dependency>
+                <groupId>com.shop</groupId>
+                <artifactId>shop-spring-boot-starter-mybatis</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>com.github.yulichang</groupId>
                 <artifactId>mybatis-plus-join-boot-starter</artifactId>
                 <version>${mybatis-plus-join-boot-starter.version}</version>
