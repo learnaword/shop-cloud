@@ -20,3 +20,12 @@ spring:
     configuration: #sql日志
       log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
       mapper-locations: classpath:classpath:com/shop/order/dal/mapper/*.xml
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      username: nacos
+      password: nacos
+
+  application:
+    name: shop-service-order

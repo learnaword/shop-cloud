@@ -24,6 +24,11 @@
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <jackson-databind.version>2.15.0</jackson-databind.version>
         <druid.version>1.2.18</druid.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <alipay-sdk.version>4.35.79.ALL</alipay-sdk.version>
+        <spring-cloud.version>2022.0.1</spring-cloud.version>
+        <jackson-core.version>2.15.0</jackson-core.version>
+        <spring-cloud-alibaba.version>2022.0.0.0-RC2</spring-cloud-alibaba.version>
         <mybatis-plus-join-boot-starter.version>1.4.3.2</mybatis-plus-join-boot-starter.version>
     </properties>
 
@@ -38,10 +43,46 @@
                 <scope>import</scope>
             </dependency>
 
+            <!--引入cloud组件-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- 支付功能SDK -->
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>${alipay-sdk.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson-core.version}</version>
             </dependency>
 
             <!--引入MybtaisPlus-->

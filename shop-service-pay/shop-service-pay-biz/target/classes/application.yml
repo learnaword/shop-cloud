@@ -4,3 +4,22 @@ spring:
       port: 6379
       database: 0
       host: 127.0.0.1
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shop-cloud?serverTimezone=GMT
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      username: nacos
+      password: nacos
+
+  application:
+    name: shop-service-pay
+
+server:
+  port: 8082

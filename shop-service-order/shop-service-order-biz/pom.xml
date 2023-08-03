@@ -33,5 +33,11 @@
             <groupId>com.shop</groupId>
             <artifactId>shop-spring-boot-starter-redis</artifactId>
         </dependency>
+
+        <!--引入nacos-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
     </dependencies>
 </project>
