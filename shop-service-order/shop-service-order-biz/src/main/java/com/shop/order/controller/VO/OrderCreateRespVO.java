@@ -3,7 +3,7 @@ package com.shop.order.controller.VO;
 import lombok.Data;
 
 @Data
-public class PreOrderResqVO {
+public class OrderCreateRespVO {
 
-    private String preOrderNo;
+    private int orderId;
 }

@@ -1,4 +1,4 @@
-package com.shop.order.enums;
+package com.shop.common.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,11 +9,10 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum OrderStatusEnum {
+public enum CommonStatusEnum {
 
-    NO(0, "未支付"),
-    SUCCESS(1, "已支付"),
-    CANCEL(2,"取消订单");
+    ENABLE(0, "开启"),
+    DISABLE(1, "关闭");
     private final Integer status;
     private final String name;
 }

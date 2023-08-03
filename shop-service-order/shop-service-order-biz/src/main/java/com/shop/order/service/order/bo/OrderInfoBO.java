@@ -27,9 +27,6 @@ public class OrderInfoBO {
     //订单详情
     private List<OrderInfoDetailBO> orderDetailList;
 
-    //购物车订单列表
-    private List<Long> cartIdList;
-
     //商品总量
     private Integer payNum;
 }

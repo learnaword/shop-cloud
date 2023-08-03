@@ -3,11 +3,12 @@ package com.shop.order.service.order;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.ObjectUtil;
-import com.shop.order.controller.VO.PreOrderDetailVO;
-import com.shop.order.controller.VO.PreOrderReqVO;
-import com.shop.order.controller.VO.PreOrderResqVO;
+import com.shop.common.enums.CommonStatusEnum;
+import com.shop.order.controller.VO.*;
+import com.shop.order.dal.dataobject.OrderDO;
 import com.shop.order.dal.dataobject.ProductDO;
-import com.shop.order.dal.dataobject.User;
+import com.shop.order.dal.mapper.OrderMapper;
+import com.shop.order.enums.OrderStatusEnum;
 import com.shop.order.service.order.bo.OrderInfoBO;
 import com.shop.order.service.order.bo.OrderInfoDetailBO;
 import com.shop.order.service.product.ProductService;
@@ -20,6 +21,7 @@ import org.springframework.stereotype.Service;
 import com.shop.common.utils.*;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -34,11 +36,14 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     ProductService productService;
 
+    @Autowired
+    OrderMapper orderMapper;
+
     private final StringRedisTemplate redisTemplate;
 
 
     @Override
-    public PreOrderResqVO preOrder(PreOrderReqVO preOrderReqVO) {
+    public PreOrderRespVO preOrder(PreOrderReqVO preOrderReqVO) {
 
         //计算商品的价格
         BigDecimal totalPrice;
@@ -58,12 +63,55 @@ public class OrderServiceImpl implements OrderService {
 
         redisTemplate.opsForValue().set("user_order:" + key, JsonUtils.toJsonString(orderInfoBO), 60, TimeUnit.MINUTES);
 
-        PreOrderResqVO preOrderResqVO = new PreOrderResqVO();
+        PreOrderRespVO preOrderResqVO = new PreOrderRespVO();
         preOrderResqVO.setPreOrderNo(key);
 
-        System.out.println(redisTemplate.opsForValue().get("user_order:" + key));
-        System.out.println(1111);
         return preOrderResqVO;
+    }
+
+    @Override
+    public OrderCreateRespVO orderCreate(OrderCreateReqVO orderCreateReqVO) {
+
+        //检查预订单信息，并将预订单信息转换为orderInfoBO
+        String key = "user_order:" + orderCreateReqVO.getPreOrderNo();
+        if(redisTemplate.hasKey(key)){
+            System.out.println("预下单订单不存在");
+        }
+        String orderInfoStr = redisTemplate.opsForValue().get(key);
+        OrderInfoBO orderInfo = JsonUtils.parseObject(orderInfoStr, OrderInfoBO.class);
+
+        OrderDO orderDO = new OrderDO();
+
+        String orderId = IdUtil.fastSimpleUUID();
+
+        orderDO.setOrderNo(orderId);
+        orderDO.setRemark(orderCreateReqVO.getRemark());
+        orderDO.setPayType(orderCreateReqVO.getCode());
+
+        //这里只做立即购买，所以订单详情里只有一个商品
+        OrderInfoDetailBO orderInfoDetailBO=  orderInfo.getOrderDetailList().get(0);
+
+        orderDO.setSubject(orderInfoDetailBO.getProductName());
+        orderDO.setTotalAmount(orderInfo.getPayFee());
+        orderDO.setStatus(OrderStatusEnum.NO.getStatus());
+        orderDO.setIsDel(CommonStatusEnum.ENABLE.getStatus());
+        orderDO.setProductId(orderInfoDetailBO.getProductId());
+        orderDO.setUpdateTime(LocalDateTime.now());
+        orderDO.setCreateTime(LocalDateTime.now());
+
+        orderMapper.insert(orderDO);
+        //删除预订单信息
+        if(redisTemplate.hasKey(key)){
+            redisTemplate.delete(key);
+        }
+
+        OrderCreateRespVO orderCreateRespVO = new OrderCreateRespVO();
+        orderCreateRespVO.setOrderId(orderDO.getId());
+
+        //将订单编号加入到自动取消订单列表里，之后会写这部分逻辑自动取消任务。
+        redisTemplate.opsForList().leftPop("auto_cancel_order",orderDO.getId());
+
+        return orderCreateRespVO;
     }
 
     private OrderInfoBO validatePreOrderRequest(PreOrderReqVO preOrderReqVO) {
