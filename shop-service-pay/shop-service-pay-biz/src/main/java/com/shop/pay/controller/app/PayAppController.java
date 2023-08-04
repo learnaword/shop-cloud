@@ -8,13 +8,13 @@ import com.shop.pay.controller.app.vo.PayAppPageRespVO;
 import com.shop.pay.convert.app.AppConvert;
 import com.shop.pay.dal.dataobject.PayAppDO;
 import com.shop.pay.dal.dataobject.PayConfigDO;
-import com.shop.pay.service.impl.PayAppServiceImpl;
-import com.shop.pay.service.impl.PayConfigServiceImpl;
+import com.shop.pay.service.PayAppService;
+import com.shop.pay.service.PayConfigService;
+import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -26,11 +26,11 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/payApp")
 public class PayAppController {
+    @Resource
+    private PayAppService payAppService;
 
     @Resource
-    private PayAppServiceImpl payAppService;
-    @Resource
-    private PayConfigServiceImpl payAppConfigService;
+    private PayConfigService payAppConfigService;
 
     @RequestMapping("/list")
     public CommonResult<PageResult<PayAppPageRespVO>> getPayAppPage(@Valid PayAppPageReqVO payAppPageReqVO){

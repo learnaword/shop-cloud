@@ -5,10 +5,12 @@ import com.shop.order.dal.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 @Service
 public class ProductServiceImpl implements ProductService{
 
-    @Autowired
+    @Resource
     ProductMapper productMapper;
 
     @Override

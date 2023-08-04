@@ -7,11 +7,11 @@ import com.shop.pay.controller.config.vo.UpdatePayConfigReqVO;
 import com.shop.pay.convert.config.PayConfigConvert;
 import com.shop.pay.core.enums.PayConfigEnum;
 import com.shop.pay.dal.dataobject.PayConfigDO;
-import com.shop.pay.dal.mysql.PayConfigMapper;
+import com.shop.pay.dal.mapper.PayConfigMapper;
 import com.shop.pay.service.PayConfigService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
@@ -20,6 +20,7 @@ public class PayConfigServiceImpl implements PayConfigService {
 
     @Resource
     PayConfigMapper payConfigMapper;
+
     @Override
     public List<PayConfigDO> getAppConfigListByAppIds(Collection<Long> appIds) {
         return payConfigMapper.selectListByAppIds(appIds);

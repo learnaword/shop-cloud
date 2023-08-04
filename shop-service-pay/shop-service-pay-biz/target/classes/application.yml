@@ -18,8 +18,18 @@ spring:
       username: nacos
       password: nacos
 
+    openfeign:
+      httpclient:
+        connection-timeout: 60000
+        ReadTimeout: 60000
+
   application:
-    name: shop-service-pay
+    name: shop-pay-service
 
 server:
   port: 8082
+
+shop:
+  info:
+    version: 1.0.0
+    base-package: com.shop.pay

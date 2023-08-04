@@ -10,20 +10,21 @@ import com.shop.pay.service.PayService;
 import com.shop.pay.controller.pay.VO.PayOrderSubmitReqVO;
 import com.shop.pay.core.client.PayClient;
 import com.shop.pay.dal.dataobject.PayAppDO;
+import jakarta.annotation.Resource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 @Service
 public class PayServiceImpl implements PayService {
 
-    @Resource
+    @Autowired
     PayClientFactory payClientFactory;
-    @Resource
+
+    @Autowired
     PayAppServiceImpl payAppService;
+
     @Resource
     OrderApi orderApi;
-
 
     @Override
     public String submitOrder(PayOrderSubmitReqVO payOrderSubmitReqVO){

@@ -15,7 +15,6 @@ spring:
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
 
-
   mybatis-plus:
     configuration: #sql日志
       log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -27,5 +26,16 @@ spring:
       username: nacos
       password: nacos
 
+    openfeign:
+      httpclient:
+        connection-timeout: 60000
+        ReadTimeout: 60000
+
+
   application:
     name: shop-order-service
+
+shop:
+  info:
+    version: 1.0.0
+    base-package: com.shop.order

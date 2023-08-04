@@ -4,11 +4,13 @@ import com.shop.enums.ApiConstants;
 import com.shop.order.dto.OrderRespDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@FeignClient(name = ApiConstants.NAME)
+@FeignClient(value = ApiConstants.NAME,path =ApiConstants.PREFIX + "/order")
 public interface OrderApi {
     String PREFIX = ApiConstants.PREFIX + "/order";
 
-    @PostMapping(PREFIX + "/get")
-    OrderRespDTO getOrderById(Long id);
+    @PostMapping( PREFIX + "/get")
+    OrderRespDTO getOrderById(@RequestBody Long id);
 }

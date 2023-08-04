@@ -27,7 +27,7 @@ public class AlipayPcPayClient extends AbstractAlipyPayClient {
         request.setReturnUrl("");
         JSONObject bizContent = new JSONObject();
         bizContent.put("out_trade_no", reqDTO.getOutTradeNo());
-        bizContent.put("total_amount", formatAmount(reqDTO.getTotalAmount()));
+        bizContent.put("total_amount", reqDTO.getTotalAmount());
         bizContent.put("subject", "测试商品");
 
         bizContent.put("qr_pay_mode",2);

@@ -18,8 +18,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
         </processorPath>
-        <module name="shop-gateway" />
         <module name="shop-spring-boot-starter-redis" />
+        <module name="shop-gateway" />
         <module name="shop-service-pay-api" />
         <module name="shop-service-order-api" />
         <module name="shop-spring-boot-starter-mybatis" />

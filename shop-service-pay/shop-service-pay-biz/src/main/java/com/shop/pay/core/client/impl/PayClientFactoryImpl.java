@@ -8,9 +8,9 @@ import com.shop.pay.service.PayConfigService;
 import com.shop.pay.core.client.PayClient;
 import com.shop.pay.core.client.impl.alipay.AlipayAppPayClient;
 import com.shop.pay.core.client.impl.alipay.AlipayPcPayClient;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-
-import javax.annotation.Resource;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Slf4j
 public class PayClientFactoryImpl implements PayClientFactory {
@@ -20,7 +20,7 @@ public class PayClientFactoryImpl implements PayClientFactory {
 
     /**
      * 根据appid和code返回具体的payClient
-     * @param appid
+     * @param appId
      * @param code
      * @return
      */

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan(value = "com.shop.order.dal.mapper",annotationClass = Mapper.class)
+@MapperScan(value = "${shop.info.base-package}",annotationClass = Mapper.class)
 public class MybatisPlusConfig {
 
     @Bean

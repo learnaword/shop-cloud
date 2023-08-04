@@ -12,11 +12,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 @RequestMapping("/order")
 @RestController
 public class OrderController {
 
-    @Autowired
+    @Resource
     OrderService orderService;
 
     @RequestMapping("/preOrder")

@@ -6,7 +6,6 @@ import cn.hutool.core.util.ObjectUtil;
 import com.shop.common.enums.CommonStatusEnum;
 import com.shop.common.utils.DateUtils;
 import com.shop.common.utils.JsonUtils;
-import com.shop.order.api.order.controller.VO.*;
 import com.shop.order.dal.dataobject.ProductDO;
 import com.shop.order.enums.OrderStatusEnum;
 import com.shop.order.service.order.bo.OrderInfoDetailBO;
@@ -16,12 +15,12 @@ import com.shop.order.controller.VO.*;
 import com.shop.order.dal.dataobject.OrderDO;
 import com.shop.order.dal.mapper.OrderMapper;
 import com.shop.order.service.order.bo.OrderInfoBO;
-import com.shop.order.order.controller.VO.*;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -32,13 +31,13 @@ import java.util.concurrent.TimeUnit;
 @AllArgsConstructor
 public class OrderServiceImpl implements OrderService {
 
-    @Autowired
+    @Resource
     UserServiceImpl userService;
 
-    @Autowired
+    @Resource
     ProductService productService;
 
-    @Autowired
+    @Resource
     OrderMapper orderMapper;
 
     private final StringRedisTemplate redisTemplate;
