@@ -4,21 +4,23 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.ObjectUtil;
 import com.shop.common.enums.CommonStatusEnum;
-import com.shop.order.controller.VO.*;
-import com.shop.order.dal.dataobject.OrderDO;
+import com.shop.common.utils.DateUtils;
+import com.shop.common.utils.JsonUtils;
+import com.shop.order.api.order.controller.VO.*;
 import com.shop.order.dal.dataobject.ProductDO;
-import com.shop.order.dal.mapper.OrderMapper;
 import com.shop.order.enums.OrderStatusEnum;
-import com.shop.order.service.order.bo.OrderInfoBO;
 import com.shop.order.service.order.bo.OrderInfoDetailBO;
 import com.shop.order.service.product.ProductService;
 import com.shop.order.service.user.UserServiceImpl;
+import com.shop.order.controller.VO.*;
+import com.shop.order.dal.dataobject.OrderDO;
+import com.shop.order.dal.mapper.OrderMapper;
+import com.shop.order.service.order.bo.OrderInfoBO;
+import com.shop.order.order.controller.VO.*;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
-
-import com.shop.common.utils.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -112,6 +114,11 @@ public class OrderServiceImpl implements OrderService {
         redisTemplate.opsForList().leftPop("auto_cancel_order",orderDO.getId());
 
         return orderCreateRespVO;
+    }
+
+    @Override
+    public OrderDO getOrderById(Long id) {
+        return orderMapper.selectById(id);
     }
 
     private OrderInfoBO validatePreOrderRequest(PreOrderReqVO preOrderReqVO) {

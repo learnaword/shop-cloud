@@ -28,4 +28,4 @@ spring:
       password: nacos
 
   application:
-    name: shop-service-order
+    name: shop-order-service

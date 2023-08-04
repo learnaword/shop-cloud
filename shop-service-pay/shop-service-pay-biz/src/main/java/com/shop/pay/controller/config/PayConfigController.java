@@ -1,10 +1,10 @@
 package com.shop.pay.controller.config;
 
 import com.shop.common.pojo.CommonResult;
+import com.shop.pay.service.impl.PayConfigServiceImpl;
 import com.shop.pay.controller.config.vo.CreatePayConfigReqVO;
 import com.shop.pay.controller.config.vo.UpdatePayConfigReqVO;
 import com.shop.pay.dal.dataobject.PayConfigDO;
-import com.shop.pay.service.impl.PayConfigServiceImpl;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

@@ -22,8 +22,6 @@ import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static com.shop.common.pojo.CommonResult.success;
-
 
 @RestController
 @RequestMapping("/payApp")
@@ -45,7 +43,7 @@ public class PayAppController {
         List<PayConfigDO> payAppConfigs= payAppConfigService.getAppConfigListByAppIds(appIds);
 
 
-        return success(AppConvert.INSTANCE.convertPage(pageResult, payAppConfigs));
+        return CommonResult.success(AppConvert.INSTANCE.convertPage(pageResult, payAppConfigs));
     }
 
     public static <T, U> List<U> convertList(Collection<T> from, Function<T, U> func) {
