@@ -15,16 +15,18 @@ import com.shop.order.controller.VO.*;
 import com.shop.order.dal.dataobject.OrderDO;
 import com.shop.order.dal.mapper.OrderMapper;
 import com.shop.order.service.order.bo.OrderInfoBO;
+import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import static com.shop.common.exception.util.ServiceExceptionUtil.exception;
+import static com.shop.enums.ErrorCodeConstants.*;
 
 
 @Service
@@ -48,6 +50,7 @@ public class OrderServiceImpl implements OrderService {
 
         //计算商品的价格
         BigDecimal totalPrice;
+        //对订单信息进行检验
         OrderInfoBO orderInfoBO = validatePreOrderRequest(preOrderReqVO);
         totalPrice = orderInfoBO.getOrderDetailList().stream().map(e -> e.getPrice().multiply(new BigDecimal(e.getPayNum()))).reduce(BigDecimal.ZERO, BigDecimal::add);
         orderInfoBO.setProTotalFee(totalPrice);
@@ -76,7 +79,7 @@ public class OrderServiceImpl implements OrderService {
         //检查预订单信息，并将预订单信息转换为orderInfoBO
         String key = "user_order:" + orderCreateReqVO.getPreOrderNo();
         if(redisTemplate.hasKey(key)){
-            System.out.println("预下单订单不存在");
+            throw exception(PRE_ORDER_NOT_FOUND);
         }
         String orderInfoStr = redisTemplate.opsForValue().get(key);
         OrderInfoBO orderInfo = JsonUtils.parseObject(orderInfoStr, OrderInfoBO.class);
@@ -130,28 +133,28 @@ public class OrderServiceImpl implements OrderService {
             PreOrderDetailVO detail = preOrderReqVO.getOrderDetails().get(0);
 
             if (ObjectUtil.isNull(detail.getProductId())) {
-                System.out.println("商品编号不能为空");
+                throw exception(PRODUCT_ID_NOT_NULL);
             }
             if (ObjectUtil.isNull(detail.getProductNum()) || detail.getProductNum() < 0) {
-                System.out.println("购买商品必须大于0");
+                throw exception(PRODUCT_NUM_IS_ZERO);
             }
 
             ProductDO product = productService.getById(detail.getProductId());
 
             if (ObjectUtil.isNull(product)) {
-                System.out.println("商品信息不存在，请刷新后重新选择");
+                throw exception(PRODUCT_NUM_IS_ZERO);
             }
 
             if (product.getIsDel()) {
-                System.out.println("商品已删除，请刷新后重新选择");
+                throw exception(PRODUCT_NOT_FOUND);
             }
 
             if (!product.getIsShow()) {
-                System.out.println("商品已下架，请刷新后重新选择");
+                throw exception(PRODUCT_OFF_SALE);
             }
 
             if (product.getStock() < detail.getProductNum()) {
-                System.out.println("商品库存不足，请刷新后重新选择");
+                throw exception(PRODUCT_OUT_OF_STOCK);
             }
 
             OrderInfoDetailBO detailBO = new OrderInfoDetailBO();

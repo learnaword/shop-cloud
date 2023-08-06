@@ -30,6 +30,7 @@
         <jackson-core.version>2.15.0</jackson-core.version>
         <spring-cloud-alibaba.version>2022.0.0.0-RC2</spring-cloud-alibaba.version>
         <mybatis-plus-join-boot-starter.version>1.4.3.2</mybatis-plus-join-boot-starter.version>
+        <guava.version>32.0.1-jre</guava.version>
     </properties>
 
     <dependencyManagement>
@@ -95,6 +96,12 @@
             <dependency>
                 <groupId>com.shop</groupId>
                 <artifactId>shop-spring-boot-starter-mybatis</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.shop</groupId>
+                <artifactId>shop-spring-boot-starter-web</artifactId>
                 <version>${revision}</version>
             </dependency>
 
@@ -176,6 +183,12 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

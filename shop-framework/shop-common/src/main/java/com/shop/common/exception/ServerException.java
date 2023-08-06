@@ -1,5 +1,6 @@
 package com.shop.common.exception;
 
+import com.shop.common.enums.GlobalErrorCodeConstants;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
