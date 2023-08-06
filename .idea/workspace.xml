@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "/Users/majunliang/Downloads/project/shop-cloud/shop-framework/shop-spring-boot-starter-mybatis/src/main/resources/META-INF/spring",
+    "last_opened_file_path": "/Users/majunliang/Downloads/project/shop-cloud",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,11 +93,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-mybatis/src/main/resources/META-INF/spring" />
       <recent name="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/resources" />
       <recent name="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/resources/META-INF/spring" />
       <recent name="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/resources/META-INF.spring" />
-      <recent name="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/java/com/shop/framework/web/handler" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/resources/META-INF/spring" />
@@ -216,7 +214,7 @@
       <workItem from="1691084179933" duration="11419000" />
       <workItem from="1691142979296" duration="14745000" />
       <workItem from="1691223806940" duration="5827000" />
-      <workItem from="1691259437913" duration="13472000" />
+      <workItem from="1691259437913" duration="13839000" />
     </task>
     <servers />
   </component>
