@@ -5,59 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/exception/util/ServiceExceptionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-mybatis/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/java/com/shop/framework/web/core/config/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/java/com/shop/framework/web/core/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/enums/ErrorCodeConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/TestVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-dependencies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/exception/ServerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-common/src/main/java/com/shop/common/exception/ServerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-common/target/classes/com/shop/common/exception/ServerException.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-common/target/classes/com/shop/common/exception/ServerException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-mybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-mybatis/src/main/java/com/shop/fremework/mybatis/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-mybatis/src/main/java/com/shop/fremework/mybatis/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-mybatis/target/classes/com/shop/fremework/mybatis/config/MybatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-mybatis/target/classes/com/shop/fremework/mybatis/config/MybatisPlusConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/PreOrderReqVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/PreOrderReqVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/OrderApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/api/OrderApiImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/VO/OrderCreateReqVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/VO/OrderCreateRespVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/VO/PreOrderDetailVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/VO/PreOrderReqVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/controller/VO/PreOrderRespVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/convert/OrderConvert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/convert/OrderConvertImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/dal/dataobject/OrderDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/dal/dataobject/ProductDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/dal/dataobject/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/dal/mapper/OrderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/dal/mapper/ProductMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/enums/OrderStatusEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/order/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/order/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/order/bo/OrderInfoBO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/order/bo/OrderInfoDetailBO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/product/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/product/ProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/classes/com/shop/order/service/user/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/target/generated-sources/annotations/com/shop/order/convert/OrderConvertImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/target/classes/com/shop/pay/convert/order/OrderConvertImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/target/generated-sources/annotations/com/shop/pay/convert/app/AppConvertImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/target/generated-sources/annotations/com/shop/pay/convert/app/AppConvertImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/target/generated-sources/annotations/com/shop/pay/convert/config/PayConfigConvertImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/target/generated-sources/annotations/com/shop/pay/convert/config/PayConfigConvertImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +216,7 @@
       <workItem from="1691084179933" duration="11419000" />
       <workItem from="1691142979296" duration="14745000" />
       <workItem from="1691223806940" duration="5827000" />
-      <workItem from="1691259437913" duration="13046000" />
+      <workItem from="1691259437913" duration="13472000" />
     </task>
     <servers />
   </component>

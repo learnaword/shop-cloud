@@ -1,0 +1,13 @@
+
+# 查看更多 .gitignore 配置 -> https://help.github.com/articles/ignoring-files/
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.class
+target/*
