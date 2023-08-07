@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="" />
+    <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/shop-gateway/src/main/java/com/shop/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-gateway/src/main/java/com/shop/pay/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-gateway/src/test/java/com/shop/pay/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/app/PayAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/app/PayAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/config/PayConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/config/PayConfigController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,7 +85,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "spring.configuration.checksum": "005726d33ca12b44be18913d854c7306",
     "vue.rearranger.settings.migration": "true"
   },
@@ -117,13 +127,26 @@
       <recent name="com.shop.pay.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="OrderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.shop.order.OrderApplication" />
       <module name="shop-service-order-biz" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.shop.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="shop-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shop.gateway.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.gateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,13 +184,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.OrderApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.PayServiceApplication" />
       <item itemvalue="Spring Boot.OrderApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OrderApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.PayServiceApplication" />
+        <item itemvalue="Spring Boot.OrderApplication" />
         <item itemvalue="Application.OrderApplication" />
       </list>
     </recent_temporary>
@@ -214,7 +239,7 @@
       <workItem from="1691084179933" duration="11419000" />
       <workItem from="1691142979296" duration="14745000" />
       <workItem from="1691223806940" duration="5827000" />
-      <workItem from="1691259437913" duration="13839000" />
+      <workItem from="1691259437913" duration="21638000" />
     </task>
     <servers />
   </component>

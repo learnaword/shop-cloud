@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 
 
 @RestController
-@RequestMapping("/payApp")
+@RequestMapping("/pay/payApp")
 public class PayAppController {
     @Resource
     private PayAppService payAppService;
