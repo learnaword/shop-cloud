@@ -7,6 +7,7 @@ import com.shop.common.enums.CommonStatusEnum;
 import com.shop.common.utils.DateUtils;
 import com.shop.common.utils.JsonUtils;
 import com.shop.order.dal.dataobject.ProductDO;
+import com.shop.order.dal.redis.RedisKeyConstants;
 import com.shop.order.enums.OrderStatusEnum;
 import com.shop.order.service.order.bo.OrderInfoDetailBO;
 import com.shop.order.service.product.ProductService;
@@ -17,6 +18,7 @@ import com.shop.order.dal.mapper.OrderMapper;
 import com.shop.order.service.order.bo.OrderInfoBO;
 import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -42,7 +44,8 @@ public class OrderServiceImpl implements OrderService {
     @Resource
     OrderMapper orderMapper;
 
-    private final StringRedisTemplate redisTemplate;
+    @Resource
+    private final RedisTemplate redisTemplate;
 
 
     @Override
@@ -81,7 +84,7 @@ public class OrderServiceImpl implements OrderService {
         if(redisTemplate.hasKey(key)){
             throw exception(PRE_ORDER_NOT_FOUND);
         }
-        String orderInfoStr = redisTemplate.opsForValue().get(key);
+        String orderInfoStr = (String)redisTemplate.opsForValue().get(key);
         OrderInfoBO orderInfo = JsonUtils.parseObject(orderInfoStr, OrderInfoBO.class);
 
         OrderDO orderDO = new OrderDO();
@@ -104,6 +107,7 @@ public class OrderServiceImpl implements OrderService {
         orderDO.setCreateTime(LocalDateTime.now());
 
         orderMapper.insert(orderDO);
+
         //删除预订单信息
         if(redisTemplate.hasKey(key)){
             redisTemplate.delete(key);
@@ -113,14 +117,19 @@ public class OrderServiceImpl implements OrderService {
         orderCreateRespVO.setOrderId(orderDO.getId());
 
         //将订单编号加入到自动取消订单列表里，之后会写这部分逻辑自动取消任务。
-        redisTemplate.opsForList().leftPop("auto_cancel_order",orderDO.getId());
+        redisTemplate.opsForList().leftPush(RedisKeyConstants.ORDER_AUTO_CANCEL.formatKey(), orderDO.getId());
 
         return orderCreateRespVO;
     }
 
     @Override
-    public OrderDO getOrderById(Long id) {
+    public OrderDO getOrderById(Integer id) {
         return orderMapper.selectById(id);
+    }
+
+    @Override
+    public void update(OrderDO orderDO) {
+        orderMapper.updateById(orderDO);
     }
 
     private OrderInfoBO validatePreOrderRequest(PreOrderReqVO preOrderReqVO) {

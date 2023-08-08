@@ -11,5 +11,7 @@ public interface OrderService {
 
     OrderCreateRespVO orderCreate(OrderCreateReqVO orderCreateReqVO);
 
-    OrderDO getOrderById(Long id);
+    OrderDO getOrderById(Integer id);
+
+    void update(OrderDO orderDO);
 }

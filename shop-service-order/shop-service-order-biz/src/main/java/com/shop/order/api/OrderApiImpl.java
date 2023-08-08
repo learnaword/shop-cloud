@@ -18,7 +18,7 @@ public class OrderApiImpl implements OrderApi {
     OrderService orderService;
 
     @Override
-    public OrderRespDTO getOrderById(Long id) {
+    public OrderRespDTO getOrderById(Integer id) {
         OrderDO orderDO = orderService.getOrderById(id);
         return OrderConvert.INSTANCE.convert(orderDO);
     }

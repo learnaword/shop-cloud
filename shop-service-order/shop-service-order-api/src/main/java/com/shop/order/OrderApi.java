@@ -12,5 +12,5 @@ public interface OrderApi {
     String PREFIX = ApiConstants.PREFIX + "/order";
 
     @PostMapping( PREFIX + "/get")
-    OrderRespDTO getOrderById(@RequestBody Long id);
+    OrderRespDTO getOrderById(@RequestBody Integer id);
 }

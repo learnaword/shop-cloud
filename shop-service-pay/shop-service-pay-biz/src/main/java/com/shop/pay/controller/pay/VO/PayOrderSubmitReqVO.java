@@ -6,7 +6,7 @@ import lombok.Data;
 public class PayOrderSubmitReqVO {
 
     //订单id
-    private Long orderId;
+    private Integer orderId;
 
     //支付方式
     private String code;
