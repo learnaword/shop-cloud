@@ -39,3 +39,13 @@ shop:
   info:
     version: 1.0.0
     base-package: com.shop.order
+
+xxl:
+  job:
+    executor:
+      appname: ${spring.application.name} # 执行器 AppName
+      logpath: ${user.home}/logs/xxl-job/${spring.application.name} # 执行器运行日志文件存储磁盘路径
+      port: 8099
+    accessToken: default_token # 执行器通讯TOKEN
+    admin:
+      addresses: http://127.0.0.1:8000/xxl-job-admin # 调度中心部署跟地址

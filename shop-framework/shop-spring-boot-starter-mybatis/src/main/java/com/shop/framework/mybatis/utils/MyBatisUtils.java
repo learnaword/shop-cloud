@@ -1,4 +1,4 @@
-package com.shop.fremework.mybatis.utils;
+package com.shop.framework.mybatis.utils;
 
 import cn.hutool.core.collection.CollectionUtil;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;

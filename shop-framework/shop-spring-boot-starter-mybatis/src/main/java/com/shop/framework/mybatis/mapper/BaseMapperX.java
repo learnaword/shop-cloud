@@ -1,4 +1,4 @@
-package com.shop.fremework.mybatis.mapper;
+package com.shop.framework.mybatis.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.toolkit.Db;
 import com.github.yulichang.base.MPJBaseMapper;
 import com.shop.common.pojo.PageParam;
 import com.shop.common.pojo.PageResult;
-import com.shop.fremework.mybatis.utils.MyBatisUtils;
+import com.shop.framework.mybatis.utils.MyBatisUtils;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Collection;

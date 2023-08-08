@@ -26,6 +26,7 @@
         <module name="shop-spring-boot-starter-mybatis" />
         <module name="shop-service-pay-biz" />
         <module name="shop-common" />
+        <module name="shop-spring-boot-starter-job" />
         <module name="shop-service-order-biz" />
       </profile>
     </annotationProcessing>

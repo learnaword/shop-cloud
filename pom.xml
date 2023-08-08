@@ -18,6 +18,7 @@
         <module>shop-dependencies</module>
         <module>shop-service-order</module>
         <module>shop-framework/shop-spring-boot-starter-web</module>
+        <module>shop-framework/shop-spring-boot-starter-job</module>
     </modules>
 
     <properties>
