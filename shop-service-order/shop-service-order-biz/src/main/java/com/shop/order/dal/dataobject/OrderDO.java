@@ -58,4 +58,8 @@ public class OrderDO {
     //支付时间
     private LocalDateTime payTime;
 
+    //购买商品数量
+    private Integer payNum;
+
+
 }

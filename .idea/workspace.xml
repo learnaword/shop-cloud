@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/redis/RedisKeyConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/job/OrderTaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/job/OrderTaskServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/api/OrderApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/api/OrderApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/job/OrderAutoCancelTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/job/OrderAutoCancelTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/dataobject/OrderDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/dataobject/OrderDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/job/OrderTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/job/OrderTaskServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/order/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/pay/VO/PayOrderSubmitReqVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/pay/VO/PayOrderSubmitReqVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/service/product/ProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +240,7 @@
       <workItem from="1691428210912" duration="6146000" />
       <workItem from="1691445545950" duration="3351000" />
       <workItem from="1691451031704" duration="7745000" />
-      <workItem from="1691503043293" duration="5701000" />
+      <workItem from="1691503043293" duration="9593000" />
     </task>
     <servers />
   </component>

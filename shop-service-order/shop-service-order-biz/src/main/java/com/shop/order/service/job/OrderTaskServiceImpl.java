@@ -6,6 +6,7 @@ import com.shop.order.dal.dataobject.OrderDO;
 import com.shop.order.dal.redis.RedisKeyConstants;
 import com.shop.order.enums.OrderStatusEnum;
 import com.shop.order.service.order.OrderService;
+import com.shop.order.service.product.ProductService;
 import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -25,6 +26,9 @@ public class OrderTaskServiceImpl implements OrderTaskService{
     @Resource
     OrderService orderService;
 
+    @Resource
+    ProductService productService;
+
     @Override
     public void autoCancelOrder() {
         String key = RedisKeyConstants.ORDER_AUTO_CANCEL.formatKey();
@@ -39,7 +43,7 @@ public class OrderTaskServiceImpl implements OrderTaskService{
             OrderDO orderDO = orderService.getOrderById(orderId);
             //订单是否支付
             if(orderDO.getStatus().equals(OrderStatusEnum.SUCCESS.getStatus())){
-                return;
+                continue;
             }
             //获取获取过期时间
             LocalDateTime cancelTime;
@@ -50,11 +54,11 @@ public class OrderTaskServiceImpl implements OrderTaskService{
                 orderDO.setStatus(OrderStatusEnum.CANCEL.getStatus());
                 orderService.update(orderDO);
             }else{
-                //没有过期
+                //没有过期，将key重新插入到队列中
                 redisTemplate.opsForList().leftPush(key,orderId);
             }
             //会滚库存
-
+            productService.rollbackStock(orderId,orderDO.getPayNum());
         }
 
     }

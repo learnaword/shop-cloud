@@ -84,6 +84,7 @@ public class OrderServiceImpl implements OrderService {
         if(redisTemplate.hasKey(key)){
             throw exception(PRE_ORDER_NOT_FOUND);
         }
+
         String orderInfoStr = (String)redisTemplate.opsForValue().get(key);
         OrderInfoBO orderInfo = JsonUtils.parseObject(orderInfoStr, OrderInfoBO.class);
 
@@ -105,8 +106,12 @@ public class OrderServiceImpl implements OrderService {
         orderDO.setProductId(orderInfoDetailBO.getProductId());
         orderDO.setUpdateTime(LocalDateTime.now());
         orderDO.setCreateTime(LocalDateTime.now());
+        orderDO.setPayNum(orderInfoDetailBO.getPayNum());
 
         orderMapper.insert(orderDO);
+
+        //扣除商品库存
+        productService.subStock(orderInfoDetailBO.getProductId(),orderInfoDetailBO.getPayNum());
 
         //删除预订单信息
         if(redisTemplate.hasKey(key)){
