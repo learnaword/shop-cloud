@@ -57,7 +57,7 @@ public class OrderTaskServiceImpl implements OrderTaskService{
                 //没有过期，将key重新插入到队列中
                 redisTemplate.opsForList().leftPush(key,orderId);
             }
-            //会滚库存
+            //回滚库存
             productService.rollbackStock(orderId,orderDO.getPayNum());
         }
 

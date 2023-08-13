@@ -5,19 +5,18 @@ import com.shop.pay.service.impl.PayConfigServiceImpl;
 import com.shop.pay.controller.config.vo.CreatePayConfigReqVO;
 import com.shop.pay.controller.config.vo.UpdatePayConfigReqVO;
 import com.shop.pay.dal.dataobject.PayConfigDO;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/pay/config")
 public class PayConfigController {
 
     @Resource
-
     private PayConfigServiceImpl payConfigService;
 
     @RequestMapping("/get")

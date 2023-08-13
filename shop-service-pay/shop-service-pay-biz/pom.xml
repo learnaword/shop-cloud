@@ -50,6 +50,11 @@
             <artifactId>shop-spring-boot-starter-redis</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.shop</groupId>
+            <artifactId>shop-spring-boot-starter-job</artifactId>
+        </dependency>
+
         <!--引入nacos-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
