@@ -1,4 +1,4 @@
-package cn.iocoder.yudao.framework.redis.core;
+package com.shop.framework.redis.core;
 
 import java.util.ArrayList;
 import java.util.List;

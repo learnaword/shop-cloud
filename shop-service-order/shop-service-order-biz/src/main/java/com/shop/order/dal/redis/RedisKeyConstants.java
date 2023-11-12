@@ -1,6 +1,6 @@
 package com.shop.order.dal.redis;
 
-import cn.iocoder.yudao.framework.redis.core.RedisKeyDefine;
+import com.shop.framework.redis.core.RedisKeyDefine;
 
 public interface RedisKeyConstants {
     RedisKeyDefine ORDER_AUTO_CANCEL = new RedisKeyDefine("订单自动取消队列",

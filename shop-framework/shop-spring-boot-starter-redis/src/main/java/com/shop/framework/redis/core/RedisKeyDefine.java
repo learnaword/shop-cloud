@@ -1,4 +1,4 @@
-package cn.iocoder.yudao.framework.redis.core;
+package com.shop.framework.redis.core;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
