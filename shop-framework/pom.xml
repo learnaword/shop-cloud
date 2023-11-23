@@ -16,6 +16,8 @@
         <module>shop-spring-boot-starter-redis</module>
         <module>shop-spring-boot-starter-mybatis</module>
         <module>shop-spring-boot-starter-web</module>
+        <module>shop-spring-boot-starter-job</module>
+        <module>shop-spring-boot-starter-tenant</module>
     </modules>
 
 </project>

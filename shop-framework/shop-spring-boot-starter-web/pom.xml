@@ -3,9 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.shop</groupId>
-        <artifactId>shop-cloud</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
+        <artifactId>shop-framework</artifactId>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>shop-spring-boot-starter-web</artifactId>

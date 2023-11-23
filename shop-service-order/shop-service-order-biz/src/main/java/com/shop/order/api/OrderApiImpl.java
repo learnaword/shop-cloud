@@ -7,9 +7,7 @@ import com.shop.order.dal.dataobject.OrderDO;
 import com.shop.order.dto.OrderRespDTO;
 import com.shop.order.service.order.OrderService;
 import jakarta.annotation.Resource;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RestController;
-
 
 @RestController(ApiConstants.PREFIX + "/order")
 public class OrderApiImpl implements OrderApi {

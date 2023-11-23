@@ -1,6 +1,7 @@
 package com.shop.pay.controller.app;
 
 import cn.hutool.core.collection.CollUtil;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.shop.common.pojo.CommonResult;
 import com.shop.common.pojo.PageResult;
 import com.shop.pay.controller.app.vo.PayAppPageReqVO;
@@ -33,6 +34,7 @@ public class PayAppController {
     private PayConfigService payAppConfigService;
 
     @RequestMapping("/list")
+    @SentinelResource(value = "sayHello")
     public CommonResult<PageResult<PayAppPageRespVO>> getPayAppPage(@Valid PayAppPageReqVO payAppPageReqVO){
 
         //获取app信息

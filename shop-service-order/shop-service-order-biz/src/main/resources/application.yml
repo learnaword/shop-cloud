@@ -2,6 +2,9 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: shop-order-service
+
   data:
     redis:
       port: 6379
@@ -26,14 +29,34 @@ spring:
       username: nacos
       password: nacos
 
+
     openfeign:
       httpclient:
         connection-timeout: 60000
         ReadTimeout: 60000
 
+    # Sentinel 配置项，对应 SentinelProperties 配置属性类
+    sentinel:
+      eager: true
+      transport:
+        dashboard: 127.0.0.1:7070 # Sentinel 控制台地址
+        port: 8720
+      datasource:
+        ds1:
+          # 对应 DataSourcePropertiesConfiguration 类
+          nacos:
+            server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+            namespace: # Nacos 命名空间
+            group_id: DEFAULT_GROUP # Nacos 分组
+            data_id: ${spring.application.name}-flow-rule # Nacos 配置集编号
+            data_type: json # 数据格式
+            rule-type: FLOW # 规则类型
+            username: nacos
+            password: nacos
 
-  application:
-    name: shop-order-service
+feign:
+  sentinel:
+    enabled: true # 开启 Sentinel 对 Feign 的支持，默认为 false 关闭。
 
 shop:
   info:

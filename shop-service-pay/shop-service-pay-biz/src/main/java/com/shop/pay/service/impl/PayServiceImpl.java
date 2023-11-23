@@ -23,7 +23,7 @@ public class PayServiceImpl implements PayService {
     @Autowired
     PayAppServiceImpl payAppService;
 
-    @Resource
+    @Autowired
     OrderApi orderApi;
 
     @Override

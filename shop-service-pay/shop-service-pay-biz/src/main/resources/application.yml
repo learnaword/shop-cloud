@@ -1,4 +1,7 @@
 spring:
+  application:
+    name: shop-pay-service
+
   data:
     redis:
       port: 6379
@@ -23,8 +26,15 @@ spring:
         connection-timeout: 60000
         ReadTimeout: 60000
 
-  application:
-    name: shop-pay-service
+    # Sentinel 配置项，对应 SentinelProperties 配置属性类
+    sentinel:
+      transport:
+        port: 8731
+        dashboard: 127.0.0.1:7070 # Sentinel 控制台地址
+
+feign:
+  sentinel:
+    enabled: true # 开启 Sentinel 对 Feign 的支持，默认为 false 关闭。
 
 server:
   port: 8082
@@ -33,3 +43,13 @@ shop:
   info:
     version: 1.0.0
     base-package: com.shop.pay
+
+xxl:
+  job:
+    executor:
+      appname: ${spring.application.name} # 执行器 AppName
+      logpath: ${user.home}/logs/xxl-job/${spring.application.name} # 执行器运行日志文件存储磁盘路径
+      port: 8099
+    accessToken: default_token # 执行器通讯TOKEN
+    admin:
+      addresses: http://127.0.0.1:8000/xxl-job-admin # 调度中心部署跟地址

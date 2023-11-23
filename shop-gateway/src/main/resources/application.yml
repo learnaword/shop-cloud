@@ -12,3 +12,6 @@ spring:
         server-addr: 127.0.0.1:8848 # Nacos 服务器地址
         username: nacos
         password: nacos
+    sentinel:
+      transport:
+        dashboard: localhost:7070

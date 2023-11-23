@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/common/enums/CommonStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-tenant/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-tenant/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/config/OrderApiAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApiFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApiFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/common/exception/ServerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/common/exception/ServerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/controller/config/PayConfigController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/controller/config/vo/CreatePayConfigReqVO.java" beforeDir="false" />
@@ -16,20 +20,28 @@
       <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/webapp/page/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/webapp/page/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/webapp/page/orderList.html" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/webapp/page/orderList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EasyPay/src/test/java/com/example/easypay/EasyPayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/test/java/com/example/easypay/EasyPayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-dependencies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/config/YudaoCacheAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/com/shop/framework/redis/config/YudaoCacheAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/config/YudaoRedisAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/com/shop/framework/redis/config/YudaoRedisAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/core/RedisKeyDefine.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/com/shop/framework/redis/core/RedisKeyDefine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/core/RedisKeyRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/com/shop/framework/redis/core/RedisKeyRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/cn/iocoder/yudao/framework/redis/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/java/com/shop/framework/redis/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-redis/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/OrderCreateRespVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/VO/OrderCreateRespVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/convert/OrderConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/convert/OrderConvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/redis/RedisKeyConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/dal/redis/RedisKeyConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/api/OrderApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/api/OrderApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/config/PayAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/config/PayAutoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/app/PayAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/app/PayAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/service/impl/PayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/service/impl/PayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/service/notify/PayNotifyTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/service/notify/PayNotifyTaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接口文档/order/preOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/接口文档/order/preOrder.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +79,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2TFmjucBHZvcAkWZ6e29OC1iIFX" />
   <component name="ProjectLevelVcsManager">
@@ -77,35 +89,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "/Users/majunliang/Downloads/我的项目/project/shop-cloud",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "13f7787e371d8b581a38324da0ea5054",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/majunliang/Downloads/我的项目/project/shop-cloud&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;08761363a8eafb49c187aec38651424b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -131,11 +143,11 @@
       <recent name="com.shop.order" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shop.order.api" />
       <recent name="com.shop.common.exception.util" />
       <recent name="com.shop.framework.web.core.utils" />
       <recent name="com.shop.framework.web" />
       <recent name="com.shop.pay.service" />
-      <recent name="com.shop.pay.config" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.OrderApplication">
@@ -268,7 +280,17 @@
       <workItem from="1693991179854" duration="437000" />
       <workItem from="1693999426310" duration="985000" />
       <workItem from="1699191680881" duration="323000" />
-      <workItem from="1699802994169" duration="1046000" />
+      <workItem from="1699802994169" duration="1833000" />
+      <workItem from="1699949089887" duration="74000" />
+      <workItem from="1699960547602" duration="208000" />
+      <workItem from="1699964116336" duration="7000" />
+      <workItem from="1700058974838" duration="652000" />
+      <workItem from="1700104000991" duration="3012000" />
+      <workItem from="1700408345616" duration="6115000" />
+      <workItem from="1700633674553" duration="305000" />
+      <workItem from="1700648047948" duration="3519000" />
+      <workItem from="1700653209065" duration="637000" />
+      <workItem from="1700654599928" duration="16516000" />
     </task>
     <servers />
   </component>

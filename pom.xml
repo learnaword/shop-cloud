@@ -17,9 +17,6 @@
         <module>shop-service-pay</module>
         <module>shop-dependencies</module>
         <module>shop-service-order</module>
-        <module>shop-framework/shop-spring-boot-starter-web</module>
-        <module>shop-framework/shop-spring-boot-starter-job</module>
-        <module>shop-framework/shop-spring-boot-starter-tenant</module>
     </modules>
 
     <properties>

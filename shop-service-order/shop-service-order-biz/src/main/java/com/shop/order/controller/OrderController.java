@@ -4,10 +4,12 @@ package com.shop.order.controller;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.shop.common.pojo.CommonResult;
 import com.shop.framework.web.core.handler.GlobalExceptionHandler;
+import com.shop.order.OrderApiFallbackFactory;
 import com.shop.order.controller.VO.*;
 import com.shop.order.job.OrderAutoCancelTask;
 import com.shop.order.service.order.OrderService;
 import jakarta.annotation.Resource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,8 +22,8 @@ public class OrderController {
     @Resource
     OrderService orderService;
 
-    @Resource
-    OrderAutoCancelTask orderAutoCancelTask;
+    @Autowired
+    OrderApiFallbackFactory orderApiFallbackFactory;
 
     @RequestMapping("/preOrder")
     public CommonResult<PreOrderRespVO> preOrder(@RequestBody PreOrderReqVO preOrderReqVO){

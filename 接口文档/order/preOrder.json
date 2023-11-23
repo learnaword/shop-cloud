@@ -50,7 +50,7 @@
     ]
   },
   {
-    "des": "/order//preOrder的测试案例",
+    "des": "/order/preOrder的测试案例",
     "preOrderNo": "1691054457a03a2dbb1d274aee80de61d913856784",
     "code": "ali_pc",
     "remark": "第一次测试订单"
