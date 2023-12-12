@@ -5,43 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="667906e2-c4b9-4582-a72a-ecd23ba7a67c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/common/enums/CommonStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-tenant/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/config/OrderApiAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApiFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApiFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/common/exception/ServerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/common/exception/ServerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/controller/config/PayConfigController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/controller/config/vo/CreatePayConfigReqVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/controller/config/vo/UpdatePayConfigReqVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/framework/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/framework/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/service/impl/PayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/java/com/example/easypay/service/impl/PayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/webapp/page/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/webapp/page/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/main/webapp/page/orderList.html" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/main/webapp/page/orderList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EasyPay/src/test/java/com/example/easypay/EasyPayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyPay/src/test/java/com/example/easypay/EasyPayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-dependencies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-web/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-api/src/main/java/com/shop/order/OrderApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/api/OrderApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/api/OrderApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/java/com/shop/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-order/shop-service-order-biz/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/config/PayAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/config/PayAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/app/PayAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/controller/app/PayAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/service/impl/PayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/service/impl/PayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/service/notify/PayNotifyTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/java/com/shop/pay/service/notify/PayNotifyTaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service-pay/shop-service-pay-biz/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/接口文档/order/preOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/接口文档/order/preOrder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-job/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/shop-framework/shop-spring-boot-starter-job/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +255,8 @@
       <workItem from="1700633674553" duration="305000" />
       <workItem from="1700648047948" duration="3519000" />
       <workItem from="1700653209065" duration="637000" />
-      <workItem from="1700654599928" duration="16516000" />
+      <workItem from="1700654599928" duration="17433000" />
+      <workItem from="1701937774396" duration="21000" />
     </task>
     <servers />
   </component>
